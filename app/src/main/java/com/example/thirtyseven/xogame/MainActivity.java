@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void update() {
-        hangManController.acceptGuess(guessView.getText().toString());
+        hangManController.acceptGuess(guessView.getText().charAt(0));
         hangManView.update(hangManModel);
         gallowsView.setText(hangManView.getGallows());
         wordView.setText(hangManView.getRiddle());
